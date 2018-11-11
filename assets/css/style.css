@@ -1,0 +1,55 @@
+.bg {
+    /* The image used */
+    /* background-image: url("..."); */
+    background-color: rgb(149, 165, 166);
+
+    /* Full height */
+    /* height: 100%; */
+
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#main {
+    background-color: white;
+    margin: 20px auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-item img {
+    display: block;
+    margin: auto;
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+#logoImg {
+    width: 40%;
+    height: auto;
+}
+
+#contactInfo {
+    float: right;
+    line-height: 0;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+
+#navbarRow {
+    margin: 1em auto;
+    background-color: rgb(149, 165, 166);
+    /* background-color: rgb(245, 151, 78); */
+}
+
+#logoRow {
+    padding: 2em 2em 1em 2em;
+}

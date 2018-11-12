@@ -28,7 +28,10 @@
 }
 
 .carousel {
+    display: block;
+    margin: auto;
     margin-bottom: 20px;
+    width: 80%;
 }
 
 #logoImg {
@@ -47,9 +50,23 @@
 #navbarRow {
     margin: 1em auto;
     background-color: rgb(149, 165, 166);
-    /* background-color: rgb(245, 151, 78); */
 }
 
 #logoRow {
     padding: 2em 2em 1em 2em;
+}
+
+#footerText {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 80%;
+}
+
+#footerText p {
+    /* margin: auto; */
+}
+
+#footerLine {
+    width: 70%;
 }

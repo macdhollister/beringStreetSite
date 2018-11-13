@@ -70,3 +70,17 @@
 #footerLine {
     width: 70%;
 }
+
+.introText {
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainText {
+    width: 80%;
+    margin: auto;
+}
+
+.sectionHeader {
+    font-weight: bold;
+}

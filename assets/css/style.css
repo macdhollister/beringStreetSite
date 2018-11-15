@@ -83,4 +83,7 @@
 
 #myMap {
     margin: 1em;
+    position: relative;
+    width: 70%;
+    height: auto;
 }

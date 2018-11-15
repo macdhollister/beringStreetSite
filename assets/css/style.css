@@ -82,8 +82,8 @@
 }
 
 #myMap {
-    margin: 1em;
-    position: relative;
+    margin: auto auto 1em;
+    display: block;
     width: 70%;
-    height: auto;
+    height: 60%;
 }

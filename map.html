@@ -13,10 +13,26 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 
     <!-- Javascript -->
+    <!-- <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ail2ZRzkPBjV0zu_P1YbUWtl11rMooZlnvAdEsrbQpulKL_m3IT6KXamVSnKEfn_' async defer></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <!-- <script src="main.js"></script> -->
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Ail2ZRzkPBjV0zu_P1YbUWtl11rMooZlnvAdEsrbQpulKL_m3IT6KXamVSnKEfn_&callback=loadMapScenario'
+        async defer></script>
+    <script type='text/javascript'>
+        function loadMapScenario() {
+            var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                center: new Microsoft.Maps.Location(47.363512, -122.607560),
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+                zoom: 18
+            });
+
+            var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), null);
+            map.entities.push(pushpin);
+        }
+
+
+    </script>
 
 </head>
 
@@ -44,16 +60,15 @@
                     <a class="navbar-brand" href="floorPlans.html">Floor Plans</a>
                     <a class="navbar-brand" href="selection.html">Selection Criteria</a>
                     <a class="navbar-brand" href="amenities.html">Amenities</a>
-                    <a class="navbar-brand" href="http://www.harborcrossinghoa.com/harborcrossinghoa/page.html?page_id=29" target="_blank">Governing Documents</a>
+                    <a class="navbar-brand" href="http://www.harborcrossinghoa.com/harborcrossinghoa/page.html?page_id=29"
+                        target="_blank">Governing Documents</a>
                 </nav>
             </div>
         </div>
         <!-- End Navbar -->
 
         <!-- Begin Map -->
-
-            <!-- Need to sign up for a Google Map API or figure out another map service to use -->
-
+        <div id="myMap" style='position:relative;width:600px;height:400px;'></div>
         <!-- End Map -->
 
         <!-- Footer -->
@@ -61,6 +76,7 @@
 
         </div>
         <!-- End Footer -->
+
     </div>
 </body>
 

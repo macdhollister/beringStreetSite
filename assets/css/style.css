@@ -80,3 +80,7 @@
 .sectionHeader {
     font-weight: bold;
 }
+
+#myMap {
+    margin: 1em;
+}

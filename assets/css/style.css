@@ -87,3 +87,17 @@
     width: 70%;
     height: 60%;
 }
+
+.floor {
+    display: block;
+    max-height: 700px;
+    margin: auto;
+}
+
+.caption {
+    text-align: center;
+}
+
+#floorPlans {
+    margin-bottom: 2em;
+}

@@ -101,3 +101,8 @@
 #floorPlans {
     margin-bottom: 2em;
 }
+
+#amenitiesCol {
+    width: 80%;
+    margin: auto;
+}

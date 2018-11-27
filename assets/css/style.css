@@ -42,9 +42,12 @@
 #contactInfo {
     float: right;
     line-height: 0;
-    position: absolute;
+    /* position: absolute;
     right: 5%;
-    top: 40%;
+    top: 40%; */
+
+    position: relative;
+    margin-top: 5%;
 }
 
 #navbarRow {
@@ -105,4 +108,15 @@
 #amenitiesCol {
     width: 80%;
     margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    #logoImg {
+        width: 100%;
+    }
+
+    #contactInfo {
+        line-height: normal;
+        float: left;
+    }
 }

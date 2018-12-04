@@ -42,10 +42,6 @@
 #contactInfo {
     float: right;
     line-height: 0;
-    /* position: absolute;
-    right: 5%;
-    top: 40%; */
-
     position: relative;
     margin-top: 5%;
 }
@@ -53,6 +49,14 @@
 #navbarRow {
     margin: 1em auto;
     background-color: rgb(149, 165, 166);
+}
+
+#navTitle {
+    display: none;
+}
+
+li > a {
+    color: black;
 }
 
 #logoRow {
@@ -110,7 +114,13 @@
     margin: auto;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 991px) {
+    #navTitle {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 800px) {
     #logoImg {
         width: 100%;
     }

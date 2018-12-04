@@ -49,6 +49,9 @@
 #navbarRow {
     margin: 1em auto;
     background-color: rgb(149, 165, 166);
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
 }
 
 #navTitle {
